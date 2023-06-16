@@ -1,0 +1,21 @@
+"use strict"; //treat all js code as newer version
+//lekin abhi iski koi jarurat nahi hai 
+// alert(3+3) //we are using nodejs,not browser
+let name = "sonu"
+let age = 20
+let isLoggedIn = false
+
+//number => 2 to power 53
+//bigint
+//string => ""
+//boolean => true/false
+// null => standalone vale
+// undefined => abhi vale assign nhi hue hai
+//symbol => unique
+
+//object
+
+console.log(typeof undefined) //undefined
+console.log(typeof null) // object
+
+//null ek object hai
