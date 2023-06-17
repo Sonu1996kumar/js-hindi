@@ -31,7 +31,28 @@ let myObj = {
 const myFunction = function(){
     console.log("hello duniya");
 }
-console.log(typeof heros) =>Object
-console.log(typeof myObj) =>Object
-console.log(typeof myFunction) =>function //object fnc
+// console.log(typeof heros) =>Object
+// console.log(typeof myObj) =>Object
+// console.log(typeof myFunction) =>function //object fnc
 //non premitive ka data type return object hi aata hai 
+
+//***************************** 
+//Stack(primitive),heap(non-primitive)
+
+let myYoutubename = "sonu singh"
+
+let anothername = myYoutubename
+anothername = "rzk singh"
+console.log(myYoutubename)
+console.log(anothername)
+
+let user1 = {
+    email: "jskdknsnn",
+    upi: "1636t"
+}
+
+let user2 = user1
+user2.email = "sonunnjd"
+
+console.log(user1.email)
+console.log(user2.email)
