@@ -56,3 +56,34 @@ console.log(tinderUser)
 console.log(Object.keys(tinderUser));// ab ye array me convert ho gya hai hm ab loop laga sakte hain
 console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser)) // kam hi use aata hai
+console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+
+//destructuring
+
+const course = {
+    coursename:"js in hindi",
+    price:999,
+    courseInstructor:"sonu"
+}
+
+//course.courseInstructor =>is trah se hame har ko acsses karna padega
+
+// const {courseInstructor} = course
+const {courseInstructor:instructor} = course
+//console.log(courseInstructor)
+console.log(instructor)
+
+//jason format(api se isi trah atta hai)
+// {
+//     "name":"sonu",
+//     "coursename":"js in hindi"
+//     "price":"free"
+// }
+// kabhi kabhi hame array ke format me milta hai
+
+// [
+// {},
+// {},
+// {}
+// ]
