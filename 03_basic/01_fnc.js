@@ -56,10 +56,55 @@ function loginUserMessage(username){
 // }
 
 //yanha undefind wala cndtion nhi aayega minm sam hoga nhi to jo likhenge wo ho jayega
-function loginUserMessage(username="sam"){
-    if(!username){
-        console.log("please enter a username");
-        return
-    }
-    return `${username} just logged in`
+// function loginUserMessage(username="sam"){
+//     if(!username){
+//         console.log("please enter a username");
+//         return
+//     }
+//     return `${username} just logged in`
+// }
+
+// function calculateCartPrice(num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(2))
+// console.log(calculateCartPrice(200,700,800)) yanha par 200 bas print hoga
+
+// function calculateCartPrice(...num1){ //... ko rest ya sprade operator kahte hain depend on usecase
+//     return num1
+// }
+// console.log(calculateCartPrice(2))
+// console.log(calculateCartPrice(200,700,800)) //array return karega sabka
+
+function calculateCartPrice(val1,val2,...num1){
+    return num1
 }
+console.log(calculateCartPrice(2))
+console.log(calculateCartPrice(200,700,800))//isme val1=200,val2=700 le lega bas 800 print hoga
+
+
+//pass object in fnc
+const user = {
+    username: "sonu",
+    price:99
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}` );
+}
+
+//handleObject(user)
+//m2 pass object
+handleObject({
+    username: "sam",
+    price:399
+})
+
+//pass arry
+const myArray = [200,400,100,600]
+function returnSecondvalue(getArray){
+    return  getArray[1]
+}
+// console.log(returnSecondvalue(myArray));
+
+console.log(returnSecondvalue([200,400,100,600]));
